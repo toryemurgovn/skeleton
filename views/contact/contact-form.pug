@@ -1,0 +1,24 @@
+section.emg-get-in-touch
+  .container
+    h1.w-100.text-center
+        | Contact form
+    form(method="POST").mt-5
+      .row.justify-content-cente
+        .col-md-4.col-sm-12.offset-md-2
+          .form-group
+            input.form-control(type="text", name="name", id="name", placeholder="Full Name")
+          .form-group
+            input.form-control(type="email", name="email", id="email", placeholder="Email")
+          .form-group
+            select.form-control
+              option.selected  Purpose to contact
+              option  option_1
+              option  option_2
+              option  option_3
+              option  option_4
+        .col-md-4
+          .form-group
+            textarea.form-control(rows="4" placeholder="Message")
+          .form-group
+            button.btn.btn-primary(type="submit")
+              | Send

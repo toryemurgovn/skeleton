@@ -1,0 +1,183 @@
+@import "themes/default/variables";
+
+@import "lib/bootstrap/bootstrap";
+
+@import "themes/default/default";
+
+// Scaffolding
+// -------------------------
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  // padding-top: 60px;
+  // margin-bottom: 75px;
+}
+
+/*
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+
+  p, ul {
+    margin-bottom: 0;
+  }
+}
+*/
+
+// Input Fields
+// -------------------------
+
+textarea {
+  resize: vertical;
+}
+
+// Navbar
+// -------------------------
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Font Icons
+// -------------------------
+
+.fa {
+  margin-right: 6px;
+}
+
+
+%line-background {
+  background: repeating-linear-gradient(
+      45deg,
+      #494949,
+      #494949 7px,
+      #363636 9px,
+      #363636 10px
+  );
+}
+
+.emg-background {
+  @extend %line-background;
+}
+
+.emg-background-5 {
+  @extend %line-background;
+  opacity: .5;
+}
+
+.emg-background-7 {
+  @extend %line-background;
+  opacity: .7;
+}
+
+@for $i from 1 through 10 {
+  .emg-height-#{$i} {
+    height: 100px * $i;
+  }
+}
+
+// Navbar
+// -------------------------
+
+.main-navigation {
+  @extend %line-background;
+  position:relative;
+  height: 56px;
+  .nav {
+    a {
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
+
+// Page
+// --------------------------
+.page-header {
+  @extend %line-background;
+  padding: 148px 0px 50px 0px;
+  .title {
+    color: #fff;
+    padding: 0px 80px;
+    font-size: 45px;
+  }
+  .desc {
+    color: #fff;
+    padding: 0px 100px;
+    font-size: 20px;
+  }
+}
+
+.block {
+  padding: $block-padding;
+  background-color: tan;
+  min-height: 300px;
+  border: 1px solid;
+}
+
+#emg-about-vision {
+  position: relative;
+  .emg-desc-vision {
+    bottom: 100px;
+    font-size: 20px;
+    position: absolute;
+  };
+  .emg-map {
+    .emg-office {
+      position: absolute;
+      transition: .15s;
+    };
+  };
+}
+
+#emg-contact-map {
+  .container {
+    background-color: gray;
+  }
+}
+
+#emg-contact-info {
+  .container {
+    background: linear-gradient(90deg, #d8d8d8 70%, #ffffff00 30%);
+  }
+  .contact-person {
+    padding: 20px 0px;
+  }
+}
+
+#career-recruits-list {
+  li {
+    .title {
+      font-weight: bold;
+      font-size: 1.2em
+    }
+  }
+}
+
+section {
+  @media only screen and (min-width: 640px) {
+    // min-height: 200px;
+    .container {
+      margin-bottom: 56px;
+    }
+  };
+}

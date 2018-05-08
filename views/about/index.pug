@@ -1,0 +1,22 @@
+extends ../single-page
+
+block header
+  .title.w-100= title
+  .desc.w-100
+    | EMURGO Vietnam is an R&D Company member of EMURGO CORP, our main business is focusing on Cardano blockchain technology
+block content
+  include mission
+  include leadership-message
+  include vision
+  include core-value
+  include investment
+  include key-member
+  include capability
+  section.mh-80
+    .container
+      .row
+        .col.align-self-center.text-center
+          p
+            | Interested in joining the Emurgo Vietnam team?
+          a.btn.btn-primary(href = "/contact")
+            | Join now
