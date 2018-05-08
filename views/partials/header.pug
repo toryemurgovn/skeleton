@@ -1,0 +1,19 @@
+.navbar.fixed-top.p-0
+  .container.main-navigation.justify-content-center
+    ul.nav
+      li.nav-item
+        a.nav-link(href='/', class=(title == 'Home') ? 'active' : undefined) Home
+      li.nav-item
+        a.nav-link(href='/business-lines', class=(title == 'Business Lines') ? 'active' : undefined) Business lines
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Cardano Blockchain
+          .dropdown-menu
+            a.dropdown-item(href='/contact', class=(title == 'Cardano Enterprise') ? 'active' : undefined) Cardano Enterprise
+      li.nav-item
+        a.nav-link(href='/about', class=(title == 'About') ? 'active' : undefined) About
+      li.nav-item
+        a.nav-link(href='/careers', class=(title == 'Careers') ? 'active' : undefined) Careers
+      li.nav-item
+        a.nav-link(href='/contact', class=(title == 'FAQ') ? 'active' : undefined) FAQ
+      li.nav-item
+        a.nav-link(href='/contact', class=(title == 'Contact') ? 'active' : undefined) Contact

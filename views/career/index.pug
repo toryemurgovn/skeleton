@@ -1,0 +1,68 @@
+extends ../single-page
+
+block header
+  .title.w-100= title
+  .desc.w-100
+    | EMURGO Vietnam is an R&D Company member of EMURGO CORP, our main business is focusing on Cardano blockchain technology
+block content
+  section
+    .container
+      .row
+        .col-12.text-center
+          img.img-fluid.mb-2.rounded.mx-auto.d-block(src="/images/example-128.png" alt="icon 128")
+          h2 Why us?
+      .row
+        .col-12.col-md-4.offset-md-2.align-self-center.text-center.p-4
+          h3
+            | Our culture
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+          p
+            | Eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+
+        .col-12.col-md-5.emg-background-7.emg-height-4
+          | image missing here
+      .row
+        .col-12.col-md-4.emg-background-7.emg-height-2.border.border-success
+          | image missing here
+        .col-12.col-md-4.emg-background-7.emg-height-2.border.border-success
+          | image missing here
+        .col-12.col-md-4.emg-background-7.emg-height-2.border.border-success
+          | image missing here
+  section
+    .container
+      .row.mt-2
+        .col-12.col-md-5.offset-md-1.emg-background-7.emg-height-4
+          | image missing here
+        .col-12.col-md-4.align-self-center.text-center.p-4
+          h3
+            | Benefits
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+          p
+            | Eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+  section
+    .container
+      .row
+        .col-12.text-center
+          h2
+            | Recruiting Positions
+      .row
+        .col-12.col-md-10.offset-md-1
+          ul#career-recruits-list.list-group.list-group-flush
+            each v in recruits
+              li.list-group-item
+                .title.text-capitalize= v.title
+                .time
+                  | Full time - Negotiable
+                .location
+                  i.fas.fa-map-marker.mr-1
+                  | Ho Chi Minh City
+                .excerpt
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                .footer.d-flex.justify-content-between.font-weight-light.pt-1
+                  .text-left
+                    | Posted 1 day ago
+                  .text-right
+                    a(href="#") Readmore
+
